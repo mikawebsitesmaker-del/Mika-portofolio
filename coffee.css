@@ -1,0 +1,254 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+color: #fff;
+line-height: 1.6;
+background:
+linear-gradient(rgba(25, 15, 10, 0.72), rgba(25, 15, 10, 0.72)),
+url("https://images.unsplash.com/photo-1447933601403-0c6688de566e?fm=jpg&q=60&w=3000&auto=format&fit=crop");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 22px 7%;
+background: rgba(35, 22, 15, 0.9);
+border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+nav strong {
+font-family: Georgia, serif;
+font-size: 25px;
+}
+
+nav div {
+display: flex;
+gap: 28px;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+font-size: 14px;
+}
+
+nav a:hover {
+color: #e8b990;
+}
+
+.hero {
+min-height: 80vh;
+display: flex;
+align-items: center;
+padding: 100px 10%;
+background:
+linear-gradient(rgba(35, 20, 12, 0.65), rgba(35, 20, 12, 0.65)),
+url("https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-abstract-blur-coffee-shop-cafe-and-restaurant-image_15683672.jpg");
+background-size: cover;
+background-position: center;
+color: #fff;
+}
+
+.hero div {
+max-width: 650px;
+}
+
+.eyebrow {
+font-size: 12px;
+font-weight: bold;
+letter-spacing: 3px;
+margin-bottom: 15px;
+color: #e8b990;
+}
+
+.hero h1 {
+font-family: Georgia, serif;
+font-size: clamp(50px, 8vw, 90px);
+line-height: 1;
+margin-bottom: 25px;
+}
+
+.hero h1 span {
+color: #e8b990;
+}
+
+.hero p:not(.eyebrow) {
+max-width: 500px;
+font-size: 19px;
+margin-bottom: 30px;
+}
+
+.button {
+display: inline-block;
+padding: 13px 24px;
+background: #a8663e;
+color: #fff;
+text-decoration: none;
+border-radius: 4px;
+font-weight: bold;
+}
+
+.button:hover {
+opacity: 0.85;
+}
+
+.section {
+max-width: 1100px;
+margin: auto;
+padding: 100px 7%;
+background: rgba(35, 22, 15, 0.78);
+}
+
+.section h2 {
+font-family: Georgia, serif;
+font-size: 48px;
+margin-bottom: 40px;
+}
+
+.menu-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-card {
+padding: 28px 15px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-card h3 {
+font-family: Georgia, serif;
+font-size: 22px;
+margin-bottom: 6px;
+}
+
+.menu-card p {
+color: #d5c4b8;
+}
+
+.menu-card span {
+display: block;
+margin-top: 10px;
+font-weight: bold;
+color: #e8b990;
+}
+
+.about {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 70px;
+max-width: 1100px;
+}
+
+.about div:first-child {
+max-width: 600px;
+}
+
+.about p:not(.eyebrow) {
+color: #d5c4b8;
+margin-bottom: 18px;
+}
+
+.quote {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 25px;
+background: rgba(20, 12, 8, 0.8);
+}
+
+.quote p {
+font-family: Georgia, serif;
+font-size: 20px;
+font-style: italic;
+}
+
+.hours {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+align-items: start;
+}
+
+.hours > div {
+padding: 20px;
+background: rgba(20, 12, 8, 0.8);
+border: 1px solid rgba(255, 255, 255, 0.1);
+height: fit-content;
+}
+.contact {
+text-align: center;
+background: rgba(20, 12, 8, 0.9);
+max-width: 1100px;
+}
+
+.contact p:not(.eyebrow) {
+color: #d5c4b8;
+margin-bottom: 30px;
+}
+
+footer {
+display: flex;
+justify-content: space-between;
+padding: 30px 7%;
+background: rgba(15, 9, 6, 0.95);
+color: #b9a69a;
+font-size: 13px;
+}
+
+@media (max-width: 700px) {
+nav {
+align-items: flex-start;
+}
+
+nav div {
+gap: 12px;
+flex-wrap: wrap;
+justify-content: flex-end;
+}
+
+.hero {
+padding: 80px 7%;
+}
+
+.hero h1 {
+font-size: 52px;
+}
+
+.section {
+padding: 75px 7%;
+}
+
+.section h2 {
+font-size: 38px;
+}
+
+.menu-grid {
+grid-template-columns: 1fr;
+}
+
+.about {
+grid-template-columns: 1fr;
+}
+
+.hours {
+grid-template-columns: 1fr;
+}
+
+footer {
+flex-direction: column;
+gap: 10px;
+}
